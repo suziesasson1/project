@@ -1,0 +1,9 @@
+body{
+    background:linear-gradient(#1481BA,lightblue);
+}
+button{
+    font-size: 30px;
+    color:white;
+    background-color:#F6828C;
+    margin:auto;
+}

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="style.css">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <h1>Suzie</h1>
+        <ul>
+            <li><a href="interests.html">interests</a></li>
+             <li><a href="aboutme.html">about me</a></li>
+            <li><a href="friends.html">friends</a></li>
+            
+        </ul>
+        <div>
+        
+        
+        </div>
+         <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('div').on('click', function() {
+        $(this).toggleClass('yellow');
+    });
+  </script>
+    </body>
+</html>
+<body>touch 
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="http://cdn.playbuzz.com/cdn/5f237097-f889-4ac2-8d80-ddac2d67c576/33ebacdd-37c4-4e3b-bde2-ee5aef2b8f1e.jpg" style="width:50%">
+  <img class="mySlides" src="https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/the_artist_is_in.jpg?quality=89&w=500" style="width:40%">  
+  <img class="mySlides" src="https://s-media-cache-ak0.pinimg.com/originals/b4/fb/9c/b4fb9c1de76e83af73e98bd9192e5c2e.jpg" style="width:50%">
+  <img class="mySlides" src="http://data.whicdn.com/images/31693836/large.jpg" style="width:40%">
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
